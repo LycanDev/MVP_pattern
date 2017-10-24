@@ -6,15 +6,15 @@ For this tutorial I asume that you are already familiar with Android development
 
 What is MVP?
 
-MVP stands for Model View Controler, this pattern helps to separate all the realted functionality from how it is represented on the screen. That means that it would be possible to replace the desing with cero extra work, since all the logic is in a different layer.
+MVP stands for Model View Controller, this pattern helps to separate all the related functionality from how it is represented on the screen. That means that it would be possible to replace the design with cero extra work, since all the logic is in a different layer.
 
-MVP proyect example.
+MVP project example.
 
-This proyect cotains a small example on how create an Android application using the MVP pattern, for this I use one of the most common functionalities in an application, the login process.
+This project contains a small example on how create an Android application using the MVP pattern, for this I use one of the most common functionalities in an application, the login process.
 
 How the example application was created?
 
-First create a proyect in AndroidStudio with the following packages.
+First create a project in AndroidStudio with the following packages.
 
 ```
 control
@@ -47,7 +47,7 @@ public class ControlActivity extends AppCompatActivity implements ControlView{
 }
 ```
 
-The controlPresenterImpl will hace a reference to the activity and will have the logic releated to the screen, is this case there is no screen, so it will only contains the intent to the login
+The controlPresenterImpl will hace a reference to the activity and will have the logic related to the screen, is this case there is no screen, so it will only contains the intent to the login
 
 ```
 public class ControlPresenterImpl implements ControlPresenter{
@@ -81,7 +81,7 @@ class LoginPresenterImpl
 interface LoginView
 ```
 
-The LoginActivity will implement the LoginView interface which provides all methods that will be used for comunication between the view and the presenter, like show the login errors for example.
+The LoginActivity will implement the LoginView interface which provides all methods that will be used for communication between the view and the presenter, like show the login errors for example.
 
 ```
 public class LoginActivity extends AppCompatActivity implements LoginView{
